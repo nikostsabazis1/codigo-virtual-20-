@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #444;
+        color: #eee;
+        font-family: sans-serif;
+      }
+      code {
+        font-familiy: consolas;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Filas y Columnas</h2>
+        <p>Las tablas se colocan dentro de una etiqueta <code> table </code></p>
+        <p>Las tablas tienen 3 partes</p>
+        <ul>
+          <li><code>t head</code>: Cabecera</li>
+          <li><code>t body</code>: Cuerpo</li>
+          <li><code>t foot </code>: Pie de Tabla</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla Simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th>Descripcion</th>
+                <th>Precio unitario</th>
+                <th>Precio total </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>2</td>
+                <td>Teclados mecanicos Fanatic Vanquish</td>
+                <td>S/200.00 </td>
+                <td>S/400.00 </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Monitor Widescreen Samsung </td>
+                <td>S/800.00 </td>
+                <td>S/800.00 </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mouse HyperX  </td>
+                <td>S/180.00 </td>
+                <td>S/180.00 </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <td colspan="3" align="center" >TOTAL</td>
+                <td>S/1380.00</td>
+                
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr/>
+      <section>
+        <h2> Combinando filas </h2>
+        <p> Para combinar filas se usa el atributo <code> rowspan </code></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th> Categoria </th>
+              <th> Etiquetas </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">izquierda 1 </td>
+              <td>derecha 1</td>
+            </tr>
+            <tr>
+              
+              <td>derecha 2</td>
+            </tr>
+            <tr>
+              
+              <td>derecha 3 </td>
+            </tr>
+            <tr>
+             
+              <td>derecha 4 </td>
+            </tr>
+            <tr>
+              
+              <td>derecha 5 </td>
+            </tr>
+            <tr>
+             <td rowspan="5"> izquierda 6 </td>
+              <td>derecha 6</td>
+            </tr>
+            <tr>
+             
+              <td>derecha 7</td>
+            </tr>
+            <tr>
+              
+              <td>derecha 8</td>
+            </tr>
+            <tr>
+             
+              <td>derecha 9</td>
+            </tr>
+            <tr>
+              
+              <td>derecha 10 </td>
+            </tr>
+            <tr>
+              <td rowspan="6"> izquierda 11 </td>
+              <td>derecha 11 </td>
+            </tr>
+            <tr>
+              
+              <td>derecha 12 </td>
+            </tr>
+            <tr>
+              
+              <td>derecha 13 </td>
+            </tr>
+            <tr>
+              
+              <td>derecha 14 </td>
+            </tr>
+            <tr>
+             
+              <td>derecha 15 </td>
+            </tr>
+            <tr>
+              
+              <td>derecha 16 </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr/>
+      <section>
+        <h2> Ejercicio 2 </h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercados</td>
+              <td></td>
+              <td>25/04/2011</td>
+            </tr>
+            <tr>
+             
+              <td colspan="2">N°Fra.:2456/00</td>
+              
+            </tr>
+            <tr>
+             
+              <td>Cliente</td>
+              <td rowspan="3">Juan Francisco Redrovan <br/> 123456 <br/> Magdalena del Mar </td>
+            </tr>
+            <tr>
+              
+              <td>RUC</td>
+              
+            </tr>
+            <tr>
+              
+              <td>Direccion</td>
+             
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2> Tarea </h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5"> Supermercado La Vendedora </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    
+   
+      
